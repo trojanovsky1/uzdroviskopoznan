@@ -1,8 +1,739 @@
-<!doctype html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uzdrovisko - centrum terapii i ruchu</title>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="fonts/bd/style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="favicon.ico">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preload" as="image" href="img/uzdrovisko9.webp" />
+        <link rel="preload" as="image" href="img/uzdrovisko54.webp" />
+        <link rel="preload" as="image" href="img/uzdrovisko57.webp" />
 
-    <title>Navbar #2 | AsmrProg</title>
+    </head>
+    <body>
+        <section class="container1">
+            <div class="social-container">
+                <div class="contact">
+                    <img src="img/icon_tel.svg" class="phone-icon">
+                    <a href="tel:+48881718918">+48 881 718 918</a>
+                </div>
+                <div class="contact">
+                    <img src="img/icon_mail.svg" class="mail-icon">
+                    <a href="mailto:kontakt@uzdroviskopoznan.pl">kontakt@uzdroviskopoznan.pl</a>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100090335857048" target="_blank">
+                      <img src="img/icon_fb.svg" class="fb-icon">
+                    </a>
+                    <a href="https://www.instagram.com/uzdroviskopoznan/" target="_blank">
+                      <img src="img/icon_insta.svg" class="ig-icon">
+                    </a>
+                </div>
+    
+            </div>
+        </section>
+
+    
+
+
+
+        <section class="section0">
+            <div class="background-container"></div>
+            <div class="navbar-container">
+                <nav class="navbar">
+                    <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+                    <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <a href="index.html">
+                        <img src="img/logo1.svg" class="logo">
+                    </a>
+                    <nav class="navbar-menu">
+                        <button type="button" class="activem" onclick="window.location.href = 'pierwsza-wizyta.html'">Pierwsza wizyta</button>
+                        <button type="button" class="activem" onclick="scrollToSectionById('our-team')">Zespół</button>
+                        <button type="button" class="activem" onclick="scrollToSectionById('therapy-methods')">Metody terapii</button>
+                        <button type="button" class="activem" onclick="scrollToSectionById('gallery-section')">Galeria</button>
+                        <button type="button" class="activem" onclick="scrollToSectionById('recommendations')">Rekomendacje</button>
+                        <button type="button" class="activem" onclick="window.location.href = 'baza-wiedzy.html'">Baza wiedzy</button>
+                        <button type="button" class="activem" onclick="window.location.href = 'cennik.html'">Cennik</button>
+                        <button type="button" class="activem" onclick="scrollToSectionById('contact')">Kontakt</button>
+                        <button type="button" class="reserve-button" onclick="window.open('https://www.znanylekarz.pl/placowki/uzdrovisko-centrum-terapii-i-ruchu', '_blank')">Zarezerwuj wizytę</button>
+                    </nav>
+                </nav>
+            </div>
+            <div class="banner-content">
+                <div class="content-container">
+                    <h1 class="section-title"></h1>
+                    <p class="section-description">Zapraszamy Cię w podróż do odzyskania zdrowia. <br>Chętnie potowarzyszymy Ci w tej drodze. Ba, postaramy się zostać Twoimi przewodnikami, którzy dzięki wiedzy i doświadczeniu potrafią pokazać właściwe drogowskazy.</p>
+                    <button type="button" class="reserve-button" onclick="window.open('https://www.znanylekarz.pl/placowki/uzdrovisko-centrum-terapii-i-ruchu', '_blank')">Zarezerwuj wizytę</button>
+                </div>
+            </div>
+            <div class="pagination">
+                <span class="page-indicator"></span>
+                <span class="page-indicator"></span>
+                <span class="page-indicator"></span>
+            </div>
+            <div class="navbar-container1">
+                <nav class="navbar1">
+                    <div class="navbar-overlay1" onclick="toggleMenuOpen()"></div>
+                    <button type="button" class="navbar-burger1" onclick="toggleMenuOpen()">
+                        <span class="material-icons">menu</span>
+                    </button>
+                    <a href="index.html">
+                        <img src="img/logo4.svg" class="logo">
+                    </a>
+                    <nav class="navbar-menu1">
+                        <button type="button" class="activem1" onclick="window.location.href = 'pierwsza-wizyta.html'">Pierwsza wizyta</button>
+                        <button type="button" class="activem1" onclick="scrollToSectionById('our-team')">Zespół</button>
+                        <button type="button" class="activem1" onclick="scrollToSectionById('therapy-methods')">Metody terapii</button>
+                        <button type="button" class="activem1" onclick="scrollToSectionById('gallery-section')">Galeria</button>
+                        <button type="button" class="activem1" onclick="scrollToSectionById('recommendations')">Rekomendacje</button>
+                        <button type="button" class="activem1" onclick="window.location.href = 'baza-wiedzy.html'">Baza wiedzy</button>
+                        <button type="button" class="activem1" onclick="window.location.href = 'cennik.html'">Cennik</button>
+                        <button type="button" class="activem1" onclick="scrollToSectionById('contact')">Kontakt</button>
+                        <button type="button" class=" reserve-button" onclick="window.open('https://www.znanylekarz.pl/placowki/uzdrovisko-centrum-terapii-i-ruchu', '_blank')">Zarezerwuj wizytę</button>
+                    </nav>
+                </nav>
+            </div>
+        </section>
+
+
+        
+        <section class="section1">
+            <div class="content1">
+                <div class="desc1">
+                    <span>Nasza misja</span>
+                    <p>Wiemy jak trudna potrafi być to przeprawa i samodzielne jej pokonanie może okazać się niemożliwe. W naszych gabinetach wykorzystujemy założenia z zakresu fizjoterapii, akupunktury, naturopatii, refleksologii wspomagając to wszystko treningiem medycznym i jogą. <br>Uzdrovisko to miejsce, w którym pełni pasji i zaangażowania terapeuci prowadzą pacjentów przez drogę do zdrowia. Pozwól sobie pomóc.</p>
+                </div>
+                <img src="img/uzdrovisko19.webp">
+            </div>
+        </section>
+
+
+
+        <section class="section2">
+            <div class="container2">
+                <img src="img/semicolon.svg" class="semicolon">
+                <div class="desc2">
+                    <p>Pomysł na Uzdrovisko zrodził się z obserwacji ludzi i ich potrzeb. Chciałem stworzyć miejsce, w którym człowiek poszukujący odpowiedzi na temat zdrowia, będzie mógł je odnaleźć. Miejsce, które da mu bezpieczeństwo i wesprze jego organizm w powrocie do zdrowia. W dzisiejszych czasach żyjemy w pędzie zatracając się w kolejnych zadaniach do odhaczenia. Zapominamy w tym wszystkim o sobie, o swoim zdrowiu - o tym, że jest ono w naszych rękach. Pozwól sobie pomóc.</p>
+                    <span>Tomasz Wysocki</span>
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        <section class="section3">
+            <div class="section3-title">
+                <h2>Przykłady chorób i dysfunkcji, z którymi możemy Ci pomóc:</h2>
+            </div>
+            <div class="custom-container">
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(1)">
+                            <h5 class="custom-button-text">Układu pokarmowego</h5>
+                            <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box1">
+                            <div class="box-content">
+                                <ul>
+                                    <li>Zaparcia i problemy z wypróżnianiem</li>
+                                    <li>Zespół jelita drażliwego (IBS)</li>
+                                    <li>SIBO, SIFO, IMO</li>
+                                    <li>Refluks żołądkowo-przełykowy</li>
+                                    <li>Wzdęcia i inne bóle brzucha</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(2)">
+                            <h5 class="custom-button-text">Ginekologiczne</h5>
+                            <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box2">
+                            <div class="box-content">
+                                <ul>
+                                    <li>Bóle miesiączkowe</li>
+                                    <li>Endometrioza</li>
+                                    <li>PCOS</li>
+                                    <li>Terapia blizny po cesarskim cięciu</li>
+                                    <li>Zaburzenia cyklu miesiączkowego</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(3)">
+                            <h5 class="custom-button-text">Naczyniowe i układu <br>krwionośnego</h5>
+                            <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box3">
+                            <div class="box-content">
+                                <ul>
+                                    <li>Krwiaki i obrzęki po zabiegach operacyjnych</li>
+                                    <li>Niedokrwienie kończyn dolnych / górnych</li>
+                                    <li>Opuchnięcia, obrzęki</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(4)">
+                            <h5 class="custom-button-text">Narządu ruchu</h5>
+                            <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box4">
+                            <div class="box-content">
+                                <ul>
+                                    <li>Bóle stawów kręgosłupa</li>
+                                    <li>Bóle stawów obwodowych</li>
+                                    <li>Zapalenie ścięgien, mięśni i powięzi</li>
+                                    <li>Zerwania / naciągnięcia mięśni</li>
+                                    <li>Tendinopatie / entezopatie</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(5)">
+                            <h5 class="custom-button-text">Neurologiczne</h5>
+                            <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box5">
+                            <div class="box-content">
+                                <ul>
+                                    <li>Bóle migrenowe</li>
+                                    <li>Bóle i zawroty głowy</li>
+                                    <li>Neuralgie</li>
+                                    <li>Depresja i obniżony poziom serotoniny</li>
+                                    <li>Bóle promieniujące do kończyn górnych / dolnych</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(6)">
+                            <h5 class="custom-button-text">Dermatologiczne</h5>
+                            <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box6">
+                            <div class="box-content">
+                                <ul>
+                                    <li>Wspomaganie gojenia po zabiegach operacji plastycznych</li>
+                                    <li>Redukcja krwiaków</li>
+                                    <li>Terapia blizn (blizny świeże i przerosłe</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(7)">
+                            <h5 class="custom-button-text">Układu moczowego</h5>
+                            <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box7">
+                            <div class="box-content">
+                                <ul>
+                                    <li>Nietrzymanie moczu</li>
+                                    <li>Zapalenie pęcherza moczowego</li>
+                                    <li>Częstomocz</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(8)">
+                        <h5 class="custom-button-text">Układu oddechowego</h5>
+                        <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box8">
+                        <div class="box-content">
+                            <ul>
+                                <li>Powikłania po przebytym COVID-19</li>
+                                <li>Astma oskrzelowa</li>
+                                <li>Zaburzenia toru oddechowego</li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+    
+                    <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(9)">
+                        <h5 class="custom-button-text">Stomatologiczne</h5>
+                        <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box9">
+                        <div class="box-content">
+                            <ul>
+                                <li>Neuralgia nerwu trójdzielnego</li>
+                                <li>Bóle stawów skroniowo-żuchwowych</li>
+                                <li>Bruksizm</li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+                
+                <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(10)">
+                        <h5 class="custom-button-text">Reumatologiczne</h5>
+                        <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box10">
+                        <div class="box-content">
+                            <ul>
+                                <li>Reumatyzm tkanek miękkich</li>
+                                <li>Zesztywniające zapalenie stawów kręgosłupa (ZZSK)</li>
+                                <li>Reumatoidalne zapalenie stawów (RZS)</li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+                
+                <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(11)">
+                        <h5 class="custom-button-text">Otolaryngologiczne</h5>
+                        <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box11">
+                        <div class="box-content">
+                            <ul>
+                                <li>Szumy uszne i niedosłuch</li>
+                                <li>Zawroty głowy</li>
+                                <li>Zapalenie zatok</li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+                
+                <div class="custom-button-container">
+                        <div class="custom-button" onclick="toggleBox(12)">
+                        <h5 class="custom-button-text">Stany przed- i pooperacyjne</h5>
+                        <img class="custom-button-arrow" src="img/icon_arrow-down.svg" alt="Strzałka" width="20" height="20">
+                        </div>
+                        <div class="box" id="box12">
+                        <div class="box-content">
+                            <ul>
+                                <li>Więzadeł i łąkotek stawu kolanowego</li>
+                                <li>Endoprotezoplastyka</li>
+                                <li>Kręgosłupa i krążków międzykręgowych</li>
+                            </ul>
+                        </div>
+                        </div>
+                </div>
+            </div>
+            <button class="reserve-button-b" onclick="window.open('https://www.znanylekarz.pl/placowki/uzdrovisko-centrum-terapii-i-ruchu', '_blank')">Zarezerwuj wizytę</button>
+    
+        </section>
+
+
+
+        <section class="section4" id="our-team">
+            <div class="team">
+              <span>Nasz zespół</span>
+              <div class="container">
+                <div class="team-members">
+                  <div class="arrow arrow-left" onclick="previousMember()">
+                    <img src="img/icon_arrow-left.svg" alt="Strzałka w lewo">
+                  </div>
+                  <div class="team-member active" onclick="showMember(0)">
+                    <img src="img/worker1s.webp" alt="Osoba 1">
+                  </div>
+                  <div class="team-member" onclick="showMember(1)">
+                    <img src="img/worker2s.webp" alt="Osoba 2">
+                  </div>
+                  <div class="team-member" onclick="showMember(2)">
+                    <img src="img/worker3s.webp" alt="Osoba 3">
+                  </div>
+                  <div class="arrow arrow-right" onclick="nextMember()">
+                    <img src="img/icon_arrow-right.svg" alt="Strzałka w prawo">
+                  </div>
+                </div>
+                <div class="member-details">
+                    <div class="member-details-img">
+                        <img id="selected-member-img" src="img/worker1.webp" alt="Osoba 1">
+                      </div>
+                  <div class="desc" id="selected-member-desc">
+                    <div id="member-desc-0" class="member-desc">
+                      <h3>Tomasz</h3>
+                      <p class="member-desc-italics">Fizjoterapeuta, akupunkturzysta, naturopata, trener medyczny</p>
+                      <p>Tomasz na co dzień pracuje z pacjentami, wprowadzając ich organizmy w stan zdrowienia. W swojej praktyce łączy aktualną wiedzę Medycyny Zachodniej z naukami Tradycyjnej Medycyny Chińskiej.</p>
+                      <p>Szeroka wiedza oraz komplementarne podejście do człowieka pozwala mu spojrzeć na organizm w niekonwencjonalny sposób w poszukiwaniu przyczyny zgłaszanych dolegliwości. W praktyce łączy wiele metod pracy, dostosowując je indywidualnie do pacjenta oraz zdiagnozowanego problemu.</p>
+                      <p>Jak sam mawia, jest wielkim pasjonatem ludzkiego organizmu i przywracania go do stanu zdrowia. Wnikliwie analizuje każdy problem i eliminuje go u źródła, co jest podstawą skutecznej terapii.</p>
+                    </div>
+                    <div id="member-desc-1" class="member-desc">
+                        <h3>Szymon</h3>
+                        <p class="member-desc-italics">Fizjoterapeuta, naturopata</p>
+                        <p>Szymon podchodzi do pacjenta i organizmu ludzkiego całościowo. Jego praca wykracza poza tradycyjne metody terapeutyczne, ponieważ zdaje sobie sprawę, jak istotne jest połączenie pomiędzy ciałem, a umysłem. Sposób jego pracy nieustannie ewoluuje i zmienia się w miarę odkrywania nowych możliwości, jak i ciągłego wsłuchiwania się w potrzeby pacjentów.</p>
+                        <p>Do zdrowia podchodzi jak do dynamicznego procesu, w którym pomaga pacjentowi wyznaczyć kurs, natomiast utrzymanie kierunku zależy od samego klienta i jego codziennych nawyków oraz dbałości o własną regenerację. Wykorzystywane przez niego metody terapii często uzupełnia o pracę z emocjami i systemem energetycznym człowieka, aby w pełni wyzwolić potencjał regeneracyjny.</p>
+                    </div>
+                    <div id="member-desc-2" class="member-desc">
+                        <h3>Joanna</h3>
+                        <p class="member-desc-italics">Refleksolog, instruktorka jogi </p>
+                        <p>Refleksologia i TCM stały się dla niej niezastąpionym sposobem na poprawę samopoczucia i powrót organizmu do stanu homeostazy. Na co dzień w pracy wykorzystuje metodę Inge Dougans, która jest niejako syntezą medycyny akademickiej z wiedzą Tradycyjnej Medycyny Chińskiej. </p>
+                        <p>Joga praktykowana w różnych systemach jest częścią jej życia nieprzerwanie od ponad 12 lat. Obecnie praktykuje w nurtach jogi dynamicznej i ashtangi. Tą pasją stara się zarażać innych i udowadniać, że joga jest dla wszystkich – wystarczy tylko zrobić pierwszy krok, a jej głęboka praktyka przekłada się korzystnie na każdy aspekt życia. Asia jest pasjonatką zdrowego żywienia, TCM, ajurwedy i medycyny energetycznej.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+
+
+          <section class="section5" id="therapy-methods">
+            <h1 class="title1">Metody terapii</h1>
+            <div class="icons">
+                <a href="terapia-wiscelarna.html">
+                    <div class="icon1">
+                        <img src="img/terapia_wisceralna.svg" alt="Icon 3">
+                        <div class="caption">Terapia wisceralna</div>
+                    </div>
+                </a>
+                <a href="terapia-manualna.html">
+                    <div class="icon1">
+                        <img src="img/terapia_manualna.svg" alt="Icon 3">
+                        <div class="caption">Terapia manualna</div>
+                    </div>
+                </a>
+                <a href="terapia-blizn.html">
+                    <div class="icon1">
+                        <img src="img/terapia_blizn.svg" alt="Icon 1">
+                        <div class="caption">Terapia blizn</div>
+                    </div>
+                </a>
+                <a href="banki-ogniowe.html">
+                    <div class="icon1">
+                        <img src="img/banki_ogniowe.svg" alt="Icon 1">
+                        <div class="caption">Bańki ogniowe</div>
+                    </div>
+                </a>
+                <a href="terapia-nm.html">
+                    <div class="icon1">
+                        <img src="img/terapia_nm.svg" alt="Icon 2">
+                        <div class="caption">Terapia<br> nerwowo-mięśniowa</div>
+                    </div>
+                </a>
+                <a href="akupunktura.html">
+                    <div class="icon1">
+                        <img src="img/akupunktura.svg" alt="Icon 1">
+                        <div class="caption">Akupunktura</div>
+                    </div>
+                </a>
+                <a href="akupunktura-ucha.html">
+                    <div class="icon1">
+                        <img src="img/akupunktura_ucha.svg" alt="Icon 2">
+                        <div class="caption">Akupunktura ucha</div>
+                    </div>
+                </a>
+                <a href="elektroakupuntura.html">
+                    <div class="icon1">
+                        <img src="img/elektroakupunktura.svg" alt="Icon 1">
+                        <div class="caption">Elektroakupunktura</div>
+                    </div>
+                </a>
+                <a href="akupunktura-czaszki.html">
+                    <div class="icon1">
+                        <img src="img/akupunktura_czaszki.svg" alt="Icon 3">
+                        <div class="caption">Akupunktura czaszki</div>
+                    </div>
+                </a>
+                <a href="refleksologia.html">
+                    <div class="icon1">
+                        <img src="img/refleksologia.svg" alt="Icon 3">
+                        <div class="caption">Refleksologia</div>
+                    </div>
+                </a>
+                <a href="trening-medyczny.html">
+                    <div class="icon1">
+                        <img src="img/trening_medyczny.svg" alt="Icon 2">
+                        <div class="caption">Trening medyczny</div>
+                    </div>
+                </a>
+                <a href="joga.html">
+                    <div class="icon1">
+                        <img src="img/joga.svg" alt="Icon 2">
+                        <div class="caption">Joga</div>
+                    </div>
+                </a>
+                <a href="masaz.html">
+                    <div class="icon1">
+                        <img src="img/masaz.svg" alt="Icon 1">
+                        <div class="caption">Masaż</div>
+                    </div>
+                </a>
+                <a href="terapia-narzędziowa.html">
+                    <div class="icon1">
+                        <img src="img/terapia_narzędziowa.svg" alt="Icon 2">
+                        <div class="caption">Terapia narzędziowa</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+
+
+        <section class="section6">
+            <div class="break">
+                <div class="content-box">
+                    <h3>W czym możemy Ci pomóc?</h3>
+                    <button class="reserve-button-t" onclick="window.open('https://www.znanylekarz.pl/placowki/uzdrovisko-centrum-terapii-i-ruchu', '_blank')">Zarezerwuj wizytę</button>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section7" id="gallery-section">
+            <div class="gallery-container">
+                <h2>Galeria zdjęć</h2>
+                <div class="gallery-images">
+                    <img src="img/uzdrovisko052.webp" alt="Zdjęcie 1" onclick="openImage('img/uzdrovisko052.webp')">
+                    <img src="img/uzdrovisko038.webp" alt="Zdjęcie 2" onclick="openImage('img/uzdrovisko038.webp')">
+                    <img src="img/uzdrovisko042.webp" alt="Zdjęcie 3" onclick="openImage('img/uzdrovisko042.webp')">
+                    <img src="img/uzdrovisko020.webp" alt="Zdjęcie 4" onclick="openImage('img/uzdrovisko020.webp')">
+                    <img src="img/uzdrovisko100.webp" alt="Zdjęcie 5" onclick="openImage('img/uzdrovisko100.webp')">
+                    <img src="img/uzdrovisko111.webp" alt="Zdjęcie 6" onclick="openImage('img/uzdrovisko111.webp')">
+                    <img src="img/uzdrovisko079.webp" alt="Zdjęcie 7" onclick="openImage('img/uzdrovisko079.webp')">
+                    <img src="img/uzdrovisko087.webp" alt="Zdjęcie 8" onclick="openImage('img/uzdrovisko087.webp')">
+                    <img src="img/uzdrovisko067.webp" alt="Zdjęcie 9" onclick="openImage('img/uzdrovisko067.webp')">
+                </div>
+               <div id="overlay" onclick="closeImage()">
+                  <span class="close-btn">&times;</span>
+                  <img id="overlay-img" src="" alt="Powiększone zdjęcie">
+                </div>
+              </div>
+        </section>
+
+
+
+        <section class="section8" id="recommendations">
+            <h2 class="recomendation-heading">Rekomendacje</h2>
+            <p class="recomendation-caption">Co sądzą o nas pacjenci</p>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <div class="card swiper-slide">                       
+
+                            <div class="card-content">                           
+                                <p class="description">Bardzo polecam to miejsce, które wydaje się być miłą odmianą dla głośnych i masowo odwiedzanych miejsc, w których Pacjent jest tylko kolejnym Klientem. To duża sztuka, by w takiej branży dać odczuć człowiekowi, że na kozetce jest najważniejszy. Miałam przyjemność udać się na konsultację do Pana Tomka, u którego urzekło mnie niestandardowe podejście, uważność i szczera chęć rozwiązania mojego problemu. Dziękuję.</p>
+                                <div class="opinion">
+                                    <h2 class="name">Aleksandra K.</h2>
+                                    <span>★★★★★</span>
+                                </div>
+                                
+                            </div>
+                        </div>       
+                        <div class="card swiper-slide">                       
+
+                            <div class="card-content">                           
+                                <p class="description">Pan Tomasz jest specjalistą wartym polecenia, profesjonalny, rzeczowy, konkretny, a przy tym z ogromną otwartością na drugiego człowieka. Przyjął nas w nagłej sytuacji i ulżył w bólu. <br>Jestem zachwycona szybkością widocznych efektów. Z całego serca polecam.</p>
+                                <div class="opinion">
+                                    <h2 class="name">Emilia K.</h2>
+                                    <span>★★★★★</span>
+                                </div>
+                                
+                            </div>
+                        </div>       
+                        <div class="card swiper-slide">                       
+
+                            <div class="card-content">                           
+                                <p class="description">Decydując się na usługi oferowane przez Tomasza i Uzdrovisko, dostaniesz nie tylko pomoc, której oczekujesz! Dostaniesz znacznie, znacznie więcej ❤️<br>Przygotuj się na cudowną, ulgogenną, holistyczną, profesjonalną i kompleksową opiekę profesjonalistów, którym na Tobie naprawdę zależy. <br>Dziękuję ❤️</p>
+                                <div class="opinion">
+                                    <h2 class="name">Magdalena S.</h2>
+                                    <span>★★★★★</span>
+                                </div>
+                                
+                            </div>
+                        </div>       
+                        <div class="card swiper-slide">                       
+
+                            <div class="card-content">                           
+                                <p class="description">Polecam to miejsce, mnie osobiście uzdrowiło do tego stopnia, że po 4 latach życia w bólu, w końcu poczułem poprawę i podejmuję aktywności, których wcześniej nie podejmowałem :) <br>Myślę, że kluczem był tu trening, którego zwykła fizjoterapia nie zastąpi. Jeszcze raz polecam.</p>
+                                <div class="opinion">
+                                    <h2 class="name">Adam B.</h2>
+                                    <span>★★★★★</span>
+                                </div>
+                                
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+
+
+        <section class="section9" id="contact">
+            <h2 class="section-header">Zapraszamy do Uzdroviska!</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Kontakt</h3>
+                    <div class="address-info">
+                            <p class="paragraph">Adres:</p>
+                            <div class="address-details">
+                                <img src="img/icon-location.svg" class="contact-img">
+                                <a href="https://goo.gl/maps/bdwFCSGAPHQdUKmp6" target="_blank">Piękna 66<br>60-589 Poznań</a>
+                            </div>
+                    </div>
+                    <div class="address-info">
+                        <p class="paragraph">Rejestracja:</p>
+                        <div class="registration-details">
+                            <div class="contact1">
+                                <img src="img/icon_tel.svg" class="phone contact-img">
+                                <a href="tel:+48881718918">+48 881 718 918</a>
+                            </div>
+                            <div class="contact2">
+                                <img src="img/icon_mail.svg" class="mail contact-img">
+                                <a href="mailto:kontakt@uzdroviskopoznan.pl">kontakt@uzdroviskopoznan.pl</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-container">
+                    <h1>Formularz kontaktowy</h1>
+                    <form action="submit_form.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Imię i Nazwisko</label>
+                            <input type="text" id="name" name="name" placeholder="Imię i Nazwisko" required>
+                          </div>
+                          
+                          <div class="form-group">
+                            <label for="email">Adres e-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Adres e-mail" required>
+                          </div>
+                          
+                          <div class="form-group">
+                            <label for="message">Treść zapytania</label>
+                            <textarea id="message" name="message" placeholder="Treść zapytania" required></textarea>
+                        </div>
+                      
+                      <div class="form-group">
+                        <button type="submit">Wyślij zapytanie</button>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+        </section>
+
+
+
+        <section class="section10">
+            <a href="https://goo.gl/maps/bdwFCSGAPHQdUKmp6" target="_blank">
+                <img src="img/map.webp">
+            </a>
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="footer-logo">
+                        <img src="img/logo1.svg">
+                    </div>
+                    <div class="footer-contact">
+                        <div class="address footer-contact">
+                            <p class="footer-m">Adres:</p>
+                            <a class="footer-details" href="https://goo.gl/maps/bdwFCSGAPHQdUKmp6" target="_blank">Piękna 66<br>60-589 Poznań</a>
+                        </div>
+                        <div class="registration footer-contact">
+                            <p class="footer-m">Rejestracja:</p>
+                            <a class="footer-details" href="tel:+48881718918">+48 881 718 918</a>
+                            <a class="footer-details" href="mailto:kontakt@uzdroviskopoznan.pl">kontakt@uzdroviskopoznan.pl</a>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link" onclick="scrollToSection(event, 'our-team')">Zespół</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link" onclick="scrollToSection(event, 'therapy-methods')">Metody terapii</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link" onclick="scrollToSection(event, 'recommendations')">Rekomendacje</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="baza-wiedzy.html" class="footer-list-link">Baza wiedzy</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link" onclick="scrollToSection(event, 'gallery-section')">Galeria</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="cennik.html" class="footer-list-link">Cennik</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="#" class="footer-list-link" onclick="scrollToSection(event, 'contact')">Kontakt</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="pierwsza-wizyta.html" class="footer-list-link">Pierwsza wizyta</a>
+                            </li>
+                        </ul>
+                        <div class="footer-social">
+                            <p class="footer-m">Obserwuj nas:</p>
+                            <div class="footer-social-img">
+                                <a href="https://www.instagram.com/uzdroviskopoznan/" target="_blank">
+                                    <img src="img/icon-ig-w.svg" class="ig-icon-w">
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=100090335857048" target="_blank">
+                                    <img src="img/icon-fb-w.svg" class="fb-icon-w">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <hr class="footer-divider">
+    
+                <div class="footer-bottom">
+                    <div class="footer-left">
+                        <span class="copyright footer-m">Copyright &copy; 2023 Uzdrovisko. All rights reserved.</span>
+                        <a href="polityka.html" class="privacy-link footer-m">Polityka prywatności</a>
+                    </div>
+                </div>
+    
+            </div>
+        </footer>
+
+
+        
+    
+
+        <script type="text/javascript">
+            const toggleMenuOpen = () => document.body.classList.toggle("open");
+            
+            const menuButtons = document.querySelectorAll('.navbar-menu > button');
+            menuButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    toggleMenuOpen();
+                });
+            });
+        </script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>
