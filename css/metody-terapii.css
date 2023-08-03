@@ -109,4 +109,12 @@
     max-width: 550px;
     width: 100%;
 }
-
+.pc1 {
+    list-style: decimal;
+}
+.pc2 {
+    list-style: decimal;
+}
+.pc3 {
+    list-style: disc;
+}
