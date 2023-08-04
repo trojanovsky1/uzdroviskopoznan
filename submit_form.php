@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $message = $_POST["message"];
   
   // Adres e-mail, na który ma zostać wysłane zapytanie
-  $recipient = "twojemail@example.com";
+  $recipient = "kamiltrojanowski982@gmail.com";
   
   // Temat wiadomości e-mail
   $subject = "Nowe zapytanie ze strony kontaktowej";
