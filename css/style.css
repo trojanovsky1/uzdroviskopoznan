@@ -705,8 +705,7 @@ body.open .navbar-menu1 {
 .desc2 span {
   display: flex;
   justify-content: flex-end;
-  font-family: 'Beautifully Delicious';
-  font-size: 70px;
+  font-size: 25px;
   font-weight: bold;
   letter-spacing: -0.13px;
 }
@@ -741,9 +740,6 @@ body.open .navbar-menu1 {
   }
   .section2 .desc2 p {
       font-size: 1.8rem;
-  }
-  .desc2 span {
-    font-size: 50px;
   }
 }
 
