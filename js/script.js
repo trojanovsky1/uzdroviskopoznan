@@ -26,8 +26,8 @@ function changeBackgroundAndTitleByIndex(index) {
   ];
 
   const titles = [
-    'Prowadzimy pacjentów przez drogę do zdrowia',
     'Pomożemy Ci znaleźć zdrowie',
+    'Prowadzimy pacjentów przez drogę do zdrowia',
     'Powrót do zdrowia to powrót do życia w komforcie',
   ];
 
