@@ -2,7 +2,6 @@
 function preloadImages(images, callback) {
   let loadedImages = 0;
 
-  // Helper function do zliczania załadowanych obrazów
   function imageLoaded() {
     loadedImages++;
     if (loadedImages === images.length) {
@@ -17,6 +16,10 @@ function preloadImages(images, callback) {
   });
 }
 
+
+
+
+
 // Funkcja zmiany tła i tekstu nagłówka na podstawie indeksu
 function changeBackgroundAndTitleByIndex(index) {
   const images = [
@@ -26,41 +29,52 @@ function changeBackgroundAndTitleByIndex(index) {
   ];
 
   const titles = [
-    'Pomożemy Ci znaleźć zdrowie',
-    'Prowadzimy pacjentów przez drogę do zdrowia',
-    'Powrót do zdrowia to powrót do życia w komforcie',
+    'Pomożemy Ci znaleźć zdrowie',
+    'Prowadzimy pacjentów<br>przez drogę do zdrowia',
+    'Powrót do zdrowia to powrót<br>do życia w komforcie',
   ];
 
   if (index >= 0 && index < images.length) {
+    const sectionTitle = document.querySelector('.section-title');
+    
+    // Ustawienie opacity na 0 (niewidoczny)
+    sectionTitle.style.opacity = 0;
+
+    // Po krótkim opóźnieniu zmieniamy treść nagłówka i przywracamy widoczność
+    setTimeout(() => {
+      // Zmiana treści nagłówka
+      sectionTitle.innerHTML = titles[index];
+      
+      // Po krótkim opóźnieniu przywracamy widoczność z efektem płynności (fade-in)
+      setTimeout(() => {
+        sectionTitle.style.opacity = 1;
+      }, 100); // Opóźnienie 100 ms (0.1 sekundy)
+    }, 300); // Opóźnienie 300 ms (0.3 sekundy)
+
     // Zmiana tła
     document.querySelector('.background-container').style.backgroundImage = `url(${images[index]})`;
 
-    // Zmiana tekstu nagłówka
-    document.querySelector('.section-title').textContent = titles[index];
-
     // Aktualizacja paginacji
-    const pageIndicators = document.querySelectorAll('.page-indicator');
-    pageIndicators.forEach((indicator, idx) => {
-      indicator.classList.toggle('active', idx === index);
-    });
+    updatePageIndicators(index);
   }
 }
 
-// Funkcja zmiany tła i tekstu nagłówka
-function changeBackgroundAndTitle() {
+// Funkcja aktualizacji paginacji
+function updatePageIndicators(index) {
+  const pageIndicators = document.querySelectorAll('.page-indicator');
+  pageIndicators.forEach((indicator, idx) => {
+    indicator.classList.toggle('active', idx === index);
+  });
+}
+
+// Funkcja zmiany tła i tekstu nagłówka z automatyczną zmianą co 7 sekund
+function changeBackgroundAndTitleAutomatically() {
+  let currentImageIndex = 0;
   const images = [
     'img/uzdrovisko9.webp',
     'img/uzdrovisko54.webp',
     'img/uzdrovisko57.webp',
   ];
-
-  const titles = [
-    'Pierwszy tekst nagłówka',
-    'Drugi tekst nagłówka',
-    'Trzeci tekst nagłówka',
-  ];
-
-  let currentImageIndex = 0;
 
   function setNextBackgroundAndTitle() {
     // Zmiana tła i tekstu nagłówka za pomocą indeksu
@@ -73,26 +87,34 @@ function changeBackgroundAndTitle() {
   setNextBackgroundAndTitle();
 }
 
-// Obsługa kliknięć w kropki paginacji
-document.addEventListener('DOMContentLoaded', () => {
+// Funkcja obsługi kliknięć w kropki paginacji
+function setupPageIndicatorClickHandlers() {
   const pageIndicators = document.querySelectorAll('.page-indicator');
   pageIndicators.forEach((indicator, index) => {
     indicator.addEventListener('click', () => changeBackgroundAndTitleByIndex(index));
   });
-});
+}
 
-// Wywołanie funkcji po załadowaniu strony i wczytaniu obrazów
-window.addEventListener('load', () => {
+// Funkcja wczytywania obrazów przed uruchomieniem zmiany tła i nagłówka
+function preloadImagesAndStart() {
   const images = [
     'img/uzdrovisko9.webp',
     'img/uzdrovisko54.webp',
     'img/uzdrovisko57.webp',
   ];
 
-  preloadImages(images, changeBackgroundAndTitle);
-});
+  preloadImages(images, changeBackgroundAndTitleAutomatically);
+  setupPageIndicatorClickHandlers();
+}
 
-// ... (twój istniejący kod JavaScript) ...
+// Wywołanie funkcji po załadowaniu strony i wczytaniu obrazów
+window.addEventListener('load', preloadImagesAndStart);
+
+
+
+
+
+
 
 
 
@@ -192,10 +214,10 @@ var swiper = new Swiper(".slide-content", {
 });
 
 
-
+// Rozwijane boxy //
 var currentBox = null;
-    
-        function toggleBox(boxIndex) {
+
+function toggleBox(boxIndex) {
   var box = document.getElementById('box' + boxIndex);
   var button = document.getElementsByClassName('custom-button')[boxIndex - 1];
   var arrow = button.querySelector('.custom-button-arrow');
@@ -206,6 +228,10 @@ var currentBox = null;
     button.classList.remove('custom-button-expanded');
     arrow.style.transform = 'rotate(0deg)';
     box.classList.remove('expanded');
+
+    // Przywróć zaokrąglenie dolne przycisku
+    button.style.borderBottomLeftRadius = '12px';
+    button.style.borderBottomRightRadius = '12px';
   } else {
     // Zamykanie otwartego boxa, jeśli istnieje
     if (currentBox !== null && currentBox !== box) {
@@ -213,6 +239,10 @@ var currentBox = null;
       currentBox.previousElementSibling.classList.remove('custom-button-expanded');
       currentBox.previousElementSibling.querySelector('.custom-button-arrow').style.transform = 'rotate(0deg)';
       currentBox.classList.remove('expanded');
+
+      // Przywróć zaokrąglenie dolne poprzedniemu przyciskowi
+      currentBox.previousElementSibling.style.borderBottomLeftRadius = '12px';
+      currentBox.previousElementSibling.style.borderBottomRightRadius = '12px';
     }
 
     // Otwieranie aktualnego boxa
@@ -221,12 +251,15 @@ var currentBox = null;
     arrow.style.transform = 'rotate(180deg)';
     box.classList.add('expanded');
     currentBox = box;
+
+    // Ukryj zaokrąglenie dolne przycisku
+    button.style.borderBottomLeftRadius = '0';
+    button.style.borderBottomRightRadius = '0';
   }
 }
 
 
-
-        
+// Przerzucanie ogonków do nowej linijki //
         function lastSingleLetterToNewLine(el){
             let result;
             el.forEach((element, i)=>{

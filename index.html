@@ -5,10 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Uzdrovisko - centrum terapii i ruchu</title>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" defer>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Allison&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" defer>
-        <link rel="icon" href="favicon.ico">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" defer>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#005c65">
+        <meta name="theme-color" content="#ffffff">
         <link rel="stylesheet" href="css/swiper-bundle.min.css" defer>
         <link rel="stylesheet" href="css/style.css">
         <link rel="preload" as="image" href="img/uzdrovisko9.webp" />
@@ -153,7 +160,9 @@
             <div class="content1">
                 <div class="desc1">
                     <span>Nasza misja</span>
-                    <p>Wiemy jak trudna potrafi być to przeprawa i samodzielne jej pokonanie może okazać się niemożliwe. W naszych gabinetach wykorzystujemy założenia z zakresu fizjoterapii, akupunktury, naturopatii, refleksologii wspomagając to wszystko treningiem medycznym i jogą. <br>Uzdrovisko to miejsce, w którym pełni pasji i zaangażowania terapeuci prowadzą pacjentów przez drogę do zdrowia. Pozwól sobie pomóc.</p>
+                    <p>Dążymy do zapewnienia naszym Pacjentom kompleksowej opieki medycznej, która pomoże odzyskać sprawność, redukować ból oraz poprawić jakość życia. Promujemy zdrowy styl życia i aktywność fizyczną, aby zapobiegać powstawaniu problemów zdrowotnych.</p>
+                    <p>W naszych gabinetach wykorzystujemy założenia z zakresu fizjoterapii, akupunktury, naturopatii, refleksologii wspomagając to wszystko treningiem medycznym i jogą.</p>
+                    <p>Uzdrovisko to miejsce, w którym pełni pasji i zaangażowania terapeuci prowadzą pacjentów przez drogę do zdrowia. Pozwól sobie pomóc.</p>
                 </div>
                 <img src="img/uzdrovisko19.webp">
             </div>
@@ -165,7 +174,7 @@
             <div class="container2">
                 <img src="img/semicolon.svg" class="semicolon">
                 <div class="desc2">
-                    <p>Pomysł na Uzdrovisko zrodził się z obserwacji ludzi i ich potrzeb. Chciałem stworzyć miejsce, w którym człowiek poszukujący odpowiedzi na temat zdrowia, będzie mógł je odnaleźć. Miejsce, które da mu bezpieczeństwo i wesprze jego organizm w powrocie do zdrowia. W dzisiejszych czasach żyjemy w pędzie zatracając się w kolejnych zadaniach do odhaczenia. Zapominamy w tym wszystkim o sobie, o swoim zdrowiu - o tym, że jest ono w naszych rękach. Chętnie rozwiążemy Twój problem.</p>
+                    <p>Pomysł na Uzdrovisko zrodził się z obserwacji ludzi i ich potrzeb.<br>Chciałem stworzyć miejsce, w którym człowiek poszukujący odpowiedzi na temat zdrowia, będzie mógł je odnaleźć.<br>Miejsce, które da mu bezpieczeństwo i wesprze jego organizm w powrocie do zdrowia. W dzisiejszych czasach żyjemy w pędzie zatracając się w kolejnych zadaniach do odhaczenia. Zapominamy w tym wszystkim o sobie, o swoim zdrowiu - o tym, że jest ono w naszych rękach.<br>Chętnie rozwiążemy Twój problem.</p>
                     <span>Tomasz Wysocki</span>
                 </div>
             </div>
@@ -391,26 +400,26 @@
               <div class="container">
                 <div class="team-members">
                   <div class="arrow arrow-left" onclick="previousMember()">
-                    <img src="img/icon_arrow-left.svg" alt="Strzałka w lewo">
+                    <img src="img/icon_arrow-left.svg" alt="">
                   </div>
                   <div class="team-member active" onclick="showMember(0)">
-                    <img src="img/worker1s.webp" alt="Osoba 1">
+                    <img src="img/worker1s.webp" alt="Tomasz Wysocki">
                   </div>
                   <div class="team-member" onclick="showMember(1)">
-                    <img src="img/worker2s.webp" alt="Osoba 2">
+                    <img src="img/worker2s.webp" alt="Szymon Loos">
                   </div>
                   <div class="team-member" onclick="showMember(2)">
-                    <img src="img/worker3s.webp" alt="Osoba 3">
+                    <img src="img/worker3s.webp" alt="Joanna Surmacka-Karpik">
                   </div>
                   <div class="arrow arrow-right" onclick="nextMember()">
-                    <img src="img/icon_arrow-right.svg" alt="Strzałka w prawo">
+                    <img src="img/icon_arrow-right.svg" alt="">
                   </div>
                 </div>
                 <div class="member-details">
                     <div class="member-details-img">
-                        <img id="selected-member-img" src="img/worker1.webp" alt="Osoba 1">
+                        <img id="selected-member-img" src="img/worker1.webp" alt="Tomasz Wysocki">
                       </div>
-                  <div class="desc" id="selected-member-desc">
+                    <div class="desc" id="selected-member-desc">
                     <div id="member-desc-0" class="member-desc">
                       <h3>Tomasz Wysocki</h3>
                       <p class="member-desc-italics">Fizjoterapeuta, akupunkturzysta, naturopata, trener medyczny</p>
@@ -520,7 +529,7 @@
                         <div class="caption">Masaż</div>
                     </div>
                 </a>
-                <a href="terapia-narzędziowa.html">
+                <a href="terapia-narzedziowa.html">
                     <div class="icon1">
                         <img src="img/terapia_narzędziowa.svg" alt="Icon 2">
                         <div class="caption">Terapia narzędziowa</div>

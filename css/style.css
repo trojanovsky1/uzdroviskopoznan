@@ -507,8 +507,11 @@ body.open .navbar-menu1 {
   font-weight: 400;
   letter-spacing: -0.78px;
   margin-bottom: 24px;
+  transition: opacity 0.3s ease-in-out;
 }
 .section-description {
+  max-width: 683px;
+  width: 100%;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0px;
@@ -690,24 +693,26 @@ body.open .navbar-menu1 {
   margin-bottom: 2rem;
 }
 .section2 .desc2 {
+  max-width: 900px;
   width: 100%;
   text-align: center;
   margin: 35px 0 0 0;
 }
 .section2 .desc2 p {
-  text-align: center;
+  text-align: left;
   font-style: italic;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 400;
   letter-spacing: 0;
   color: #FFFFFF;
   opacity: 1;
 }
 .desc2 span {
+  font-family: 'Allison', cursive;;
   display: flex;
   justify-content: flex-end;
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 52px;
+  font-weight: 400;
   letter-spacing: -0.13px;
 }
 @media (min-width: 768px) {
