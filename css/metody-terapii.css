@@ -152,3 +152,11 @@
     color: #022B2F;
     text-decoration-color: #449CAD;
 }
+.pdz {
+    text-decoration: underline;
+    color: #022B2F;
+    font-weight: 800;
+}
+.pdz:hover {
+    color: #449CAD;
+}
