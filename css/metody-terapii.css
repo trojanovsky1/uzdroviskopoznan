@@ -61,32 +61,11 @@
 
 
 
-.section1p{
-    max-width: 800px;
-    width: 100%;
-    padding: 20px 20px 70px;
-    margin: 0 auto;
-    text-align: justify;
-    color: #022B2F;
-}
-.list-description {
-    padding: 0;
-    margin: 30px 0;
-}
-.list-p {
-    list-style-type: decimal;
-    margin: 0 30px;
-}
-.list-p li {
-    margin-bottom: 20px;
-    font-size: 19px;
-    font-weight: 600;
-}
-.list-p span {
-    text-align: left;
-    font-size: 19px;
-    font-weight: 600;
-}
+
+
+
+
+
 
 
 
@@ -159,4 +138,81 @@
 }
 .pdz:hover {
     color: #449CAD;
+}
+
+
+
+.section1p{
+    max-width: 800px;
+    width: 100%;
+    padding: 20px 20px 70px;
+    margin: 0 auto;
+    text-align: justify;
+    color: #022B2F;
+}
+.list-description {
+    padding: 0;
+    margin: 30px 0;
+}
+.list-p {
+    list-style-type: decimal;
+    margin: 0 30px;
+}
+.list-p li {
+    margin-bottom: 20px;
+    font-size: 19px;
+    font-weight: 600;
+}
+.list-p span {
+    text-align: left;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+
+
+
+.hirudo {
+    margin: 20px 0;
+}
+.hirudo h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.hirudo-subsection span {
+    font-size: 21px;
+    font-weight: 500;
+}
+.hirudo-subsection p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.hirudo p{
+    margin-bottom: 20px;
+}
+.hirudo > p:first-of-type {
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+.hirudo p:nth-of-type(3){
+    margin: 20px 0 12px;
+    }
+.hirudo .hirudo-list {
+  list-style: decimal;
+  margin-left: 30px;
+  padding: 0;
+}
+.hirudo .hirudo-list li{
+    padding-left: 15px;
+    margin: 7px 0;
+    font-size: 16px;
+    font-weight: 400;
 }

@@ -126,6 +126,7 @@ h1, h2, h3 {
   align-items: center;
 }
 .background-container {
+  filter: brightness(0.9);
   z-index: 997;
   position: absolute;
   top: 0;
@@ -629,6 +630,7 @@ body.open .navbar-menu1 {
   opacity: 1;
 }
 .section1 img {
+  filter: brightness(0.9);
   max-width: 438px;
   max-height: 438px;
   width: 100%;
@@ -1265,7 +1267,7 @@ body.open .navbar-menu1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url('../img/uzdrovisko11.webp');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%), url('../img/uzdrovisko11.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -24,7 +24,7 @@ function preloadImages(images, callback) {
 function changeBackgroundAndTitleByIndex(index) {
   const images = [
     'img/uzdrovisko9.webp',
-    'img/uzdrovisko54.webp',
+    'img/uzdrovisko7.webp',
     'img/uzdrovisko57.webp',
   ];
 
@@ -72,7 +72,7 @@ function changeBackgroundAndTitleAutomatically() {
   let currentImageIndex = 0;
   const images = [
     'img/uzdrovisko9.webp',
-    'img/uzdrovisko54.webp',
+    'img/uzdrovisko7.webp',
     'img/uzdrovisko57.webp',
   ];
 
@@ -99,7 +99,7 @@ function setupPageIndicatorClickHandlers() {
 function preloadImagesAndStart() {
   const images = [
     'img/uzdrovisko9.webp',
-    'img/uzdrovisko54.webp',
+    'img/uzdrovisko7.webp',
     'img/uzdrovisko57.webp',
   ];
 
